@@ -1,0 +1,8 @@
+install:
+  - pip install statuspage
+
+language: python
+python:
+  - "3.5"
+script: statuspage update --org=$STATUSPAGE_ORG --name="$STATUSPAGE_NAME" --token="$STATUSPAGE_TOKEN"
+
